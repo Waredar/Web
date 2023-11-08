@@ -154,8 +154,28 @@ a {
     margin-bottom: 50px;
 }
 
-.bestseller-wrapper {
-    background-image: url(../images/crem_1.png);
+.bestsellers {
+    display: flex;
+    justify-content: left;
+    width: 110%; 
+    padding: 0;
+    white-space: nowrap; 
+    overflow-x: scroll;
+}
+
+.bestsellers li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.bestsellers li:first-child {
+    margin-left: 50px;
+}
+.bestsellers li:last-child {
+    margin-right: 50px;
+}
+
+.bestseller-wrapper-crem {
     width: 220px;
     height: 297px;
     display: flex;
@@ -164,7 +184,11 @@ a {
     margin-bottom: 40px;
 }
 
-.bestseller-wrapper-first p {
+.bestseller-wrapper {
+    margin-bottom: 27px;
+}
+
+.bestseller-wrapper-crem p {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -173,7 +197,7 @@ a {
     margin-top: 5px;
 }
 
-.bestseller-wrapper-first span {
+.bestseller-wrapper-crem span {
     text-transform: lowercase;
     font-size: 1.3rem;
     color: #B3BAC1;
@@ -183,7 +207,17 @@ a {
     font-size: 1.3rem;
     text-decoration: underline;
     text-underline-offset: 7px;
-    margin-bottom: 27px;
+}
+
+#first {
+    background-image: url(../images/crem_1.png);
+    width: 220px;
+    height: 297px;
+}
+#second {
+    background-image: url(../images/crem_2.png);
+    width: 220px;
+    height: 297px;
 }
 
 .anketa-section {
@@ -218,9 +252,11 @@ a {
 .history-section {
     margin-top: 80px;
     background-image: url(../images/background_2.png);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
     margin-left: -15px;
     margin-right: -15px;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
    
