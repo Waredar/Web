@@ -16,12 +16,20 @@
 <body>
     <header>
         <nav>
-            <ul class="menu">
-                <li><button type="button"><img src="images/icons/string.svg" alt="Всплывающее меню"></button></li>
-                <li><a href=""><img src="images/icons/MAROON.svg" alt="Maroon"></a></li>
-                <li><a href=""><img src="images/icons/persona.svg" alt="Личный кабинет"></a></li>
-                <li><a href=""><img src="images/icons/shop.svg" alt="Магазин"></a></li>
-            </ul>
+            <div class="nav-wrapper">
+
+                <div class="nav-left">
+                    <button type="button"><img src="images/icons/string.svg" alt="Всплывающее меню"></button>
+                </div>
+                <div class="nav-right">
+                    <a href=""><img src="images/icons/persona.svg" alt="Личный кабинет"></a>
+                    <a href=""><img src="images/icons/shop.svg" alt="Магазин"></a>
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href=""><img src="images/icons/MAROON.svg" alt="Maroon"></a>
+            </div>  
         </nav>
 
         <div class="main">
@@ -42,7 +50,7 @@
                 <img src="images/body.png" alt="">
                 <a href="">
                     <p>Уход для тела </p><img src="images/icons/arrow.svg" alt="стрелка">
-                </a></p>
+                </a>
             </div>
         </div>
     </header>
@@ -56,27 +64,51 @@
 
                 <p>Легендарные продукты, завоевавшие любовь наших клиентов</p>
 
-                <ul class="bestsellers">
-                    <li>
-                        <div class="bestseller-wrapper-crem" id="first">
-                            <div class="bestseller-wrapper">
-                                <p>High</p>
-                                <p><span>Крем для лица</span></p>
-                                <a class="link" href="">Подробнее</a>
-                            </div>
-                        </div>
-                    </li>
+                <div class="bestseller-border">
 
-                    <li>
-                        <div class="bestseller-wrapper-crem" id="second">
-                            <div class="bestseller-wrapper">
-                                <p>Rest</p>
-                                <p><span>Минеральная пудра</span></p>
-                                <a class="link" href="">Подробнее</a>
+                    <ul class="bestsellers">
+                        <li>
+                            <div class="bestseller-wrapper-crem" id="first">
+                                <div class="bestseller-wrapper">
+                                    <p>High</p>
+                                    <p><span>Крем для лица</span></p>
+                                    <a class="link" href="">Подробнее</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+
+                        <li>
+                            <div class="bestseller-wrapper-crem" id="second">
+                                <div class="bestseller-wrapper">
+                                    <p>Rest</p>
+                                    <p><span>Минеральная пудра</span></p>
+                                    <a class="link" href="">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="bestseller-wrapper-crem" id="third">
+                                <div class="bestseller-wrapper">
+                                    <p>Rest</p>
+                                    <p><span>Минеральная пудра</span></p>
+                                    <a class="link" href="">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="bestseller-wrapper-crem" id="fourth">
+                                <div class="bestseller-wrapper">
+                                    <p>Rest</p>
+                                    <p><span>Минеральная пудра</span></p>
+                                    <a class="link" href="">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
 
                 <a class="button" href="">Смотреть все</a>
             </div>
@@ -92,9 +124,12 @@
                         другие факторы.</p>
                     <a class="button" href="">Заполнить анкету</a>
                 </div>
+
             </div>
 
-            <img class="photo" src="images/photo_1.png" alt="">
+            <div class="images-wrapper">
+                <img class="photo" src="images/photo_1.png" alt="">
+            </div>
         </section>
 
         <section class="history-section">
@@ -137,8 +172,8 @@
         <section class="contacts-section">
             <div class="contacts">
                 <h2>Контакты</h2>
+                <p class="head">Контакты</p>
                 <ul>
-                    <p class="head">Контакты</p>
                     <li>
                         <p><span class="foot">Адрес</span><br>
                             Санкт-Петербург,<br> ул. Большая Конюшенная, 19
