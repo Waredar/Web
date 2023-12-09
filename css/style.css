@@ -16,7 +16,7 @@ body {
     font-family: 'M PLUS 1', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 145%;
     min-width: 320px;
 }
 
@@ -28,8 +28,8 @@ main {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
 }
 
 
@@ -213,7 +213,13 @@ section {
     padding: 0;
     display: flex;
     white-space: nowrap;
-    overflow-x: scroll;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.crems ul::-webkit-scrollbar {
+    display: none;
 }
 
 .crem {
@@ -232,11 +238,12 @@ section {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 145%; 
+    line-height: 145%;
 }
+
 .desname-crem {
     text-transform: lowercase;
-    color:  var(--crem-text-color);
+    color: var(--crem-text-color);
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 290%;
@@ -334,10 +341,16 @@ section {
 
 .stack-images {
     margin-top: 5rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 0;
+}
+
+.images-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.images-wrapper img {
+    width: 145px;
+    height: 145px;
 }
 
 .contacts .text-wrapper {
@@ -365,6 +378,7 @@ section {
     display: flex;
     align-items: center;
 }
+
 .icons img {
     margin-right: 3rem;
 }
@@ -425,4 +439,46 @@ footer {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 100%;
+}
+
+@media screen and (min-width: 760px) and (max-width: 137rem) {
+
+    body {
+        font-family: 'M PLUS 1', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    
+    main {
+        text-align: left;
+    }
+    
+    .wrapper {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+
+    header {
+        padding: 4rem 4.5rem 7rem;
+        margin-bottom: 12rem;
+    }
+
+    .header-main h1 {
+        font-size: 5.4rem;
+    }
+
+    .header-wrapper {
+        position:absolute ;
+        display: flex;
+        flex-shrink: 0;
+    }
+
+
+
+    .select-image {
+        width: 24.5rem;
+        height: 32.2rem;
+    }
+
+
 }
