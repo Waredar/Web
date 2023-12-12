@@ -67,6 +67,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 0;
 }
 
@@ -74,11 +75,6 @@ header {
     margin-right: 2rem;
 }
 
-.logo {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-}
 
 button {
     border: none;
@@ -101,6 +97,20 @@ button {
     margin-left: 2rem;
 }
 
+.center-menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -1.6rem;
+    line-height: 0;
+}
+
+.header-places {
+    display: none;
+}
+
+
 .header-main {
     display: flex;
     flex-direction: column;
@@ -113,6 +123,7 @@ button {
 .header-main p.main-text {
     margin-top: 2rem;
 }
+
 
 h1 {
     text-transform: uppercase;
@@ -340,6 +351,7 @@ section {
 }
 
 
+
 .history {
     margin-left: -1.6rem;
     margin-right: -1.6rem;
@@ -363,7 +375,6 @@ section {
     font-weight: 500;
     line-height: 125%;
 }
-
 
 .subscribe {
     width: 100%;
@@ -475,7 +486,7 @@ footer {
     line-height: 100%;
 }
 
-@media screen and (min-width: 710px) and (max-width: 1370px) {
+@media screen and (min-width: 756px) and (max-width: 1370px) {
 
     body {
         font-size: 1.8rem;
@@ -534,9 +545,12 @@ footer {
         margin-bottom: 3rem;
     }
 
-
     .mobile {
         display: none;
+    }
+
+    .desktop {
+        display: unset;
     }
 
     .bestseller .text-wrapper {
@@ -556,6 +570,7 @@ footer {
     .bestseller {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .text-wrapper {
@@ -574,7 +589,7 @@ footer {
         -ms-overflow-style: none;
         scrollbar-width: none;
         margin-top: 0;
-        margin-left: 2rem;
+        margin-left: 4rem;
         margin-right: -4.5rem;
         padding: 0;
     }
@@ -591,29 +606,33 @@ footer {
         margin-right: 4.5rem;
     }
 
+
     #anketa-text-first-paragraph {
-        display: contents;
+        display: inherit;
+        margin-bottom: 2.5rem;
     }
 
-    .anketa {
+    .anketa .wrapper-section {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .wrapper-section {
+    .anketa .wrapper-section .text-wrapper {
+        max-width: 30rem;
     }
 
     .wrapper-images {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: -16.5rem;
         white-space: nowrap;
     }
 
-
-
-
-
-
-
-
+    .wrapper-section {
+        padding: 6rem;
+    }
 
     .history {
         margin-left: -4.5rem;
@@ -648,6 +667,8 @@ footer {
     .images-wrapper img {
         max-width: 23.3rem;
     }
+
+    
 
 
 
