@@ -70,8 +70,8 @@ header {
     padding: 0;
 }
 
-.nav-wrapper a{
-    margin-right:2rem;
+.nav-wrapper a {
+    margin-right: 2rem;
 }
 
 .logo {
@@ -176,11 +176,17 @@ a {
 .select-image {
     min-width: 130px;
     min-height: 170px;
-
-    background-image: url(../images/image-for-face.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.image-face {
+    background-image: url(../images/image-for-face.png);
+}
+
+.image-body {
+    background-image: url(../images/image-for-body.png);
 }
 
 section {
@@ -299,6 +305,8 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    margin-left: 1.6rem;
 }
 
 .anketa div.wrapper-section {
@@ -307,6 +315,7 @@ section {
 
 .bestseller .text-wrapper .button {
     display: none;
+    
 }
 
 .text-wrapper {
@@ -326,9 +335,8 @@ section {
 }
 
 .anketa-photo {
-    margin-top: -45px;
     width: 100%;
-    object-fit:cover;
+    margin-top: -45px;
 }
 
 
@@ -356,6 +364,11 @@ section {
     line-height: 125%;
 }
 
+
+.subscribe {
+    width: 100%;
+}
+
 .hidden {
     display: none;
 }
@@ -370,8 +383,8 @@ section {
 }
 
 .images-wrapper img {
-    width: 145px;
-    height: 145px;
+    width: 50%;
+    max-width: 177px;
 }
 
 .contacts .text-wrapper {
@@ -447,13 +460,13 @@ footer {
 .first-line {
     display: flex;
     text-align: center;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
 .first-line p {
     margin-right: 0.2rem;
 }
-
 
 .bottom-footer p {
     color: var(--footer-text-color);
@@ -462,18 +475,16 @@ footer {
     line-height: 100%;
 }
 
-@media screen and (min-width: 760px) and (max-width: 137rem) {
+@media screen and (min-width: 710px) and (max-width: 1370px) {
 
     body {
-        font-family: 'M PLUS 1', sans-serif;
         font-size: 1.8rem;
-        font-weight: 400;
     }
-    
+
     main {
         text-align: left;
     }
-    
+
     .wrapper {
         padding-left: 4.5rem;
         padding-right: 4.5rem;
@@ -481,17 +492,26 @@ footer {
 
     header {
         padding: 4rem 4.5rem 7rem;
-        margin-bottom: 12rem;
+        margin-bottom: 11rem;
+
+    }
+
+    .header-main {
+        z-index: 1;
+        margin-top: 9.8rem;
     }
 
     .header-main h1 {
         font-size: 5.4rem;
+
     }
 
     .header-wrapper {
-        position:absolute ;
         display: flex;
-        flex-shrink: 0;
+        justify-content: space-between;
+        position: relative;
+        top: -25.3rem;
+        z-index: 0;
     }
 
     .select-image {
@@ -499,10 +519,19 @@ footer {
         height: 32.2rem;
     }
 
+    .link-select {
+        margin-top: 1.5rem;
+    }
 
+
+
+    .text-select {
+        font-size: 1.6rem;
+    }
 
     .heading-text {
         font-size: 3.2rem;
+        margin-bottom: 3rem;
     }
 
 
@@ -510,18 +539,56 @@ footer {
         display: none;
     }
 
+    .bestseller .text-wrapper {
+        max-width: 20rem;
+    }
     .bestseller .text-wrapper .button {
-        display: block;
+        display: flex;
     }
 
-    .button {
+    .button{
+        margin-top: 4rem;
+    }
+    .button a {
         font-size: 1.6rem;
     }
 
     .bestseller {
         display: flex;
         flex-direction: row;
+    }
+
+    .text-wrapper {
+        align-items: start;
+        max-width: 27.6rem;
+    }
+
+    .crem {
+        width: 230px;
+        height: 312px;
+    }
+
+    .crems-border {
         white-space: nowrap;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        margin-top: 0;
+        margin-left: 2rem;
+        margin-right: -4.5rem;
+        padding: 0;
+    }
+
+    .crems-border::-webkit-scrollbar {
+        display: none;
+    }
+
+    #first-crem {
+        margin-left: 2rem;
+    }
+
+    #fourth-crem {
+        margin-right: 4.5rem;
     }
 
     #anketa-text-first-paragraph {
@@ -533,12 +600,100 @@ footer {
         flex-direction: row;
     }
 
+    .wrapper-section {
+    }
+
     .wrapper-images {
         white-space: nowrap;
-        width: 100%;
-        height: 85%;
-        margin: auto 0;
     }
+
+
+
+
+
+
+
+
+
+    .history {
+        margin-left: -4.5rem;
+        margin-right: -4.5rem;
+    }
+
+    .history .wrapper-section {
+        max-height: 39.3rem;
+        padding: 10rem 3rem;
+    }
+
+    .history .wrapper-section .text-wrapper {
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-history {
+        font-size: 3.2rem;
+    }
+
+    .subscribe {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .stack-images {
+        margin-right: 4.8rem;
+        margin-top: 0;
+    }
+
+    .images-wrapper img {
+        max-width: 23.3rem;
+    }
+
+
+
+
+
+
+    .footer-text {
+        display: flex;
+        align-items: center;
+        justify-content:  space-between;
+        padding: 6rem 4.5rem;
+    }
+
+    .footer-contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-places {
+        display: flex;
+        margin-top: 0;
+        margin-left: 5rem;
+        margin-bottom: 0
+    }
+
+    .places {
+        margin-right:  2.5rem;
+        
+    }
+
+    .places p {
+        font-size: 1.6rem;
+    }
+
+
+    .bottom-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 4.5rem;
+    }
+
+    .first-line {
+        margin: 0;
+    }
+
 
 
 }
