@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modern-normalize/modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Куратов Даниил</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="left-menu">
+                    <button id="mobile" type="button"> <img src="images/icons/mobile/burger-menu-mobile.svg"
+                            alt="burger-menu"></button>
+                    <button id="desktop" type="button"> <img src="images/icons/burger-menu.svg"
+                            alt="burger-menu"></button>
+                </div>
+                <div class="right-menu">
+                    <ul class="header-places">
+                        <li>Каталог</li>
+                        <li>о нас</li>
+                        <li>Контакты</li>
+                    </ul>
+
+                    <div class="right-menu-icons" id="mobile">
+                        <img src="images/icons/mobile/persona-mobile.svg" alt="personal">
+                        <img src="images/icons/mobile/shop-mobile.svg" alt="shop">
+                    </div>
+
+                    <div class="right-menu-icons" id="desktop">
+                        <img src="images/icons/persona.svg" alt="personal">
+                        <img src="images/icons/shop.svg" alt="shop">
+                    </div>
+
+                </div>
+            </div>
+            <div class="center-menu" id="mobile">
+                <a href="index.html"><img src="images/icons/mobile/logo-mobile.svg" alt="logo"></a>
+            </div>
+            <div class="center-menu" id="desktop">
+                <a href="index.html"><img src="images/icons/logo.svg" alt="logo"></a>
+            </div>
+        </nav>
+
+        <div class="header-main">
+            <h1>Maroon</h1>
+            <p class="main-text">Натуральная косметика
+                для бережного ухода за кожей</p>
+
+            <div class="button">
+                <a href="">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="header-wrapper">
+            <div class="select-wrapper">
+                <div class="select-image image-face"></div>
+                <div class="link-select">
+                    <a href="">
+                        <p class="text-select">Уход для лица</p> <img id="mobile"
+                            src="images/icons/mobile/arrow-mobile.svg" alt="->">
+                        <img id="desktop" src="images/icons/arrow.svg" alt="->">
+                    </a>
+                </div>
+            </div>
+
+            <div class="select-wrapper">
+                <div class="select-image image-body"></div>
+                <div class="link-select">
+                    <a href="">
+                        <p class="text-select">Уход для тела</p> <img id="mobile"
+                            src="images/icons/mobile/arrow-mobile.svg" alt="->">
+                        <img id="desktop" src="images/icons/arrow.svg" alt="->">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+            <section class="bestseller">
+                <h2 class="sr-only">Бестселлеры</h2>
+                <div class="desktop-wrapper">
+
+                    <div class="text-wrapper">
+                        <p class="heading-text">Бестселлеры</p>
+                        <p class="main-text">Легендарные продукты,
+                            завоевавшие любовь
+                            наших клиентов</p>
+
+                        <div class="button" id="desktop">
+                            <a href="">Смотреть все</a>
+                        </div>
+                    </div>
+
+                    <div class="crems-border">
+                        <div class="crems">
+                            <ul>
+                                <li>
+                                    <div class="crem" id="first-crem">
+                                        <p class="name-crem">High</p>
+                                        <p class="desname-crem">Крем для лица</p>
+                                        <a class="link-crem" href="">Подробнее</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="crem" id="second-crem">
+                                        <p class="name-crem">Rest</p>
+                                        <p class="desname-crem">Минеральная пудра</p>
+                                        <a class="link-crem" href="">Подробнее</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="crem" id="third-crem">
+                                        <p class="name-crem">Rose</p>
+                                        <p class="desname-crem">Крем для лица</p>
+                                        <a class="link-crem" href="">Подробнее</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="crem" id="fourth-crem">
+                                        <p class="name-crem">Milk</p>
+                                        <p class="desname-crem">Масло для тела</p>
+                                        <a class="link-crem" href="">Подробнее</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="button" id="mobile">
+                        <a href="">Смотреть все</a>
+                    </div>
+
+                </div>
+                <div class="arrow-switch">
+                    <img id="desktop" src="images/icons/arrow-reverse.svg" alt="">
+                    <img id="desktop" src="images/icons/arrow.svg" alt="">
+                </div>
+            </section>
+
+            <section class="anketa">
+                <div class="wrapper-section">
+                    <h2 class="sr-only">Индивидуальный уход</h2>
+                    <div class="text-wrapper">
+                        <p class="heading-text">Индивидуальный уход</p>
+                        <p class="main-text" id="anketa-text-first-paragraph">Не всегда очевидно, какие элементы
+                            и
+                            минералы необходимы коже, а многочисленные эксперименты с разными средствами только
+                            ухудшают ее качество.</p>
+                        <p class="main-text" id="anketa-text-second-paragraph">Заполните анкету, и мы подберем
+                            уход,
+                            подходящий именно вам, учитывая ваш образ жизни, место жительства и другие факторы.
+                        </p>
+
+                        <div class="button">
+                            <a href="">Заполнить анету</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="wrapper-anketa-images">
+                </div> 
+            </section>
+
+
+            <section class="history">
+                <h2 class="sr-only">Наша история</h2>
+                <div class="wrapper-section">
+                    <div class="text-wrapper">
+                        <p class="text-history">“Мы стремимся сделать уход за кожей доступным
+                            и приятным ритуалом для всех, кто хочет
+                            заботиться о себе и своем теле” </p>
+                        <div class="button">
+                            <a href="">Наша история</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe">
+                <h2 class="sr-only">Присоединяйтесь к нам</h2>
+                <div class="text-wrapper">
+                    <p class="heading-text">Присоединяйтесь к нам</p>
+                    <p class="main-text">Подпишитесь на наш аккаунт @marooncare
+                        и узнавайте о новиках и акциях первыми</p>
+
+                    <div class="button">
+                        <a href="">Подписаться</a>
+                    </div>
+                </div>
+
+                <div class="stack-images">
+                    <div class="images-wrapper">
+                        <img class="hidden" src="images/stack-images-1.png" alt="">
+                        <img src="images/stack-images-2.png" alt="">
+                        <img src="images/stack-images-3.png" alt="">
+                    </div>
+                    <div class="images-wrapper">
+                        <img class="hidden" src="images/stack-images-4.png" alt="">
+                        <img src="images/stack-images-5.png" alt="">
+                        <img src="images/stack-images-6.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <h2 class="sr-only">Контакты</h2>
+                <div class="wrapper-section">
+                    <div class="text-wrapper">
+                        <p class="heading-text">Контакты</p>
+                        <ul class="contacts-list">
+                            <li>
+                                <p class="main-text contact-type">Адрес</p>
+                                <p class="main-text">Санкт-Петербург,<br>
+                                    ул. Большая Конюшенная, 19</p>
+                            </li>
+                            <li>
+                                <p class="main-text contact-type">Телефон</p>
+                                <p class="main-text">+7 (923) 888-90-60</p>
+                            </li>
+                            <li>
+                                <p class="main-text contact-type">E-mail</p>
+                                <p class="main-text">Info@maroon.ru</p>
+                            </li>
+                            <li>
+                                <div class="icons">
+                                    <img src="images/icons/mobile/facebook-mobile.svg" alt="facebook">
+                                    <img src="images/icons/mobile/instagram-mobile.svg" alt="instagram">
+                                    <img src="images/icons/mobile/twitter-mobile.svg" alt="twitter">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="map-wrapper"></div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <div class="footer-contacts">
+
+                <a href="index.html"> <img id="mobile" src="images/icons/mobile/logo-mobile.svg" alt="logo"> <img
+                        id="desktop" src="images/icons/logo.svg" alt="logo"></a>
+
+                <div class="footer-places">
+                    <div class="places">
+                        <p>Каталог</p>
+                    </div>
+                    <div class="places">
+                        <p>О нас</p>
+                    </div>
+                    <div class="places">
+                        <p>Магазины</p>
+                    </div>
+                    <div class="places">
+                        <p>Контакты</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icons">
+                <img src="images/icons/mobile/facebook-mobile.svg" alt="facebook">
+                <img src="images/icons/mobile/instagram-mobile.svg" alt="instagram">
+                <img src="images/icons/mobile/twitter-mobile.svg" alt="twitter">
+            </div>
+        </div>
+
+        <div class="bottom-footer">
+            <div class="first-line">
+                <p>Maroon</p>
+                <p><img src="images/icons/c.svg" alt=""></p>
+                <p>2020 Все права защищены</p>
+            </div>
+            <p>Политика конфиденциальности</p>
+        </div>
+    </footer>
+</body>
+
+</html>
