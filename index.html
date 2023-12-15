@@ -17,80 +17,81 @@
 <body>
 
     <header>
-        <nav>
-            <div class="menu">
-                <div class="left-menu">
-                    <button id="mobile" type="button"> <img src="images/icons/mobile/burger-menu-mobile.svg"
-                            alt="burger-menu"></button>
-                    <button id="desktop" type="button"> <img src="images/icons/burger-menu.svg"
-                            alt="burger-menu"></button>
-                </div>
-                <div class="right-menu">
-                    <ul class="header-places">
-                        <li>Каталог</li>
-                        <li>о нас</li>
-                        <li>Контакты</li>
-                    </ul>
-
-                    <div class="right-menu-icons" id="mobile">
-                        <img src="images/icons/mobile/persona-mobile.svg" alt="personal">
-                        <img src="images/icons/mobile/shop-mobile.svg" alt="shop">
+        <div>
+            <nav>
+                <div class="menu">
+                    <div class="left-menu">
+                        <button id="mobile" type="button"> <img src="images/icons/mobile/burger-menu-mobile.svg"
+                                alt="burger-menu"></button>
+                        <button id="desktop" type="button"> <img src="images/icons/burger-menu.svg"
+                                alt="burger-menu"></button>
                     </div>
+                    <div class="right-menu">
+                        <ul class="header-places">
+                            <li>Каталог</li>
+                            <li>О нас</li>
+                            <li>Контакты</li>
+                        </ul>
 
-                    <div class="right-menu-icons" id="desktop">
-                        <img src="images/icons/persona.svg" alt="personal">
-                        <img src="images/icons/shop.svg" alt="shop">
+                        <div class="right-menu-icons" id="mobile">
+                            <img src="images/icons/mobile/persona-mobile.svg" alt="personal">
+                            <img src="images/icons/mobile/shop-mobile.svg" alt="shop">
+                        </div>
+
+                        <div class="right-menu-icons" id="desktop">
+                            <img src="images/icons/persona.svg" alt="personal">
+                            <img src="images/icons/shop.svg" alt="shop">
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
-            <div class="center-menu" id="mobile">
-                <a href="index.html"><img src="images/icons/mobile/logo-mobile.svg" alt="logo"></a>
-            </div>
-            <div class="center-menu" id="desktop">
-                <a href="index.html"><img src="images/icons/logo.svg" alt="logo"></a>
-            </div>
-        </nav>
+                <div class="center-menu">
+                    <a id="mobile" href="index.html"><img src="images/icons/mobile/logo-mobile.svg" alt="logo"></a>
+                </div>
+                <div class="center-menu" id="desktop">
+                    <a href="index.html"><img src="images/icons/logo.svg" alt="logo"></a>
+                </div>
+            </nav>
 
-        <div class="header-main">
-            <h1>Maroon</h1>
-            <p class="main-text">Натуральная косметика
-                для бережного ухода за кожей</p>
+            <div class="header-main">
+                <h1>Maroon</h1>
+                <p class="main-text">Натуральная косметика
+                    для бережного ухода за кожей</p>
 
-            <div class="button">
-                <a href="">Подробнее</a>
-            </div>
-        </div>
-
-        <div class="header-wrapper">
-            <div class="select-wrapper">
-                <div class="select-image image-face"></div>
-                <div class="link-select">
-                    <a href="">
-                        <p class="text-select">Уход для лица</p> <img id="mobile"
-                            src="images/icons/mobile/arrow-mobile.svg" alt="->">
-                        <img id="desktop" src="images/icons/arrow.svg" alt="->">
-                    </a>
+                <div class="button">
+                    <a href="">Подробнее</a>
                 </div>
             </div>
 
-            <div class="select-wrapper">
-                <div class="select-image image-body"></div>
-                <div class="link-select">
-                    <a href="">
-                        <p class="text-select">Уход для тела</p> <img id="mobile"
-                            src="images/icons/mobile/arrow-mobile.svg" alt="->">
-                        <img id="desktop" src="images/icons/arrow.svg" alt="->">
-                    </a>
+            <div class="header-wrapper">
+                <div class="select-wrapper">
+                    <div class="select-image image-face"></div>
+                    <div class="link-select">
+                        <a href="">
+                            <p class="text-select">Уход для лица</p> <img id="mobile"
+                                src="images/icons/mobile/arrow-mobile.svg" alt="->">
+                            <img id="desktop" src="images/icons/arrow.svg" alt="->">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="select-wrapper">
+                    <div class="select-image image-body"></div>
+                    <div class="link-select">
+                        <a href="">
+                            <p class="text-select">Уход для тела</p> <img id="mobile"
+                                src="images/icons/mobile/arrow-mobile.svg" alt="->">
+                            <img id="desktop" src="images/icons/arrow.svg" alt="->">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="wrapper">
 
-            <section class="bestseller">
+            <section class="bestseller wrapper">
                 <h2 class="sr-only">Бестселлеры</h2>
                 <div class="desktop-wrapper">
 
@@ -154,7 +155,7 @@
                 </div>
             </section>
 
-            <section class="anketa">
+            <section class="anketa wrapper">
                 <div class="wrapper-section">
                     <h2 class="sr-only">Индивидуальный уход</h2>
                     <div class="text-wrapper">
@@ -176,7 +177,7 @@
                 </div>
 
                 <div class="wrapper-anketa-images">
-                </div> 
+                </div>
             </section>
 
 
@@ -194,7 +195,7 @@
                 </div>
             </section>
 
-            <section class="subscribe">
+            <section class="subscribe wrapper">
                 <h2 class="sr-only">Присоединяйтесь к нам</h2>
                 <div class="text-wrapper">
                     <p class="heading-text">Присоединяйтесь к нам</p>
@@ -220,7 +221,7 @@
                 </div>
             </section>
 
-            <section class="contacts">
+            <section class="contacts wrapper">
                 <h2 class="sr-only">Контакты</h2>
                 <div class="wrapper-section">
                     <div class="text-wrapper">
@@ -254,40 +255,41 @@
                 <div class="map-wrapper"></div>
             </section>
 
-        </div>
     </main>
 
     <footer>
-        <div class="footer-text">
-            <div class="footer-contacts">
-
+        <div class="bottom-border">  
+            <div class="footer-text wrapper">
+                <div class="footer-contacts">
+                    
                 <a href="index.html"> <img id="mobile" src="images/icons/mobile/logo-mobile.svg" alt="logo"> <img
-                        id="desktop" src="images/icons/logo.svg" alt="logo"></a>
-
-                <div class="footer-places">
-                    <div class="places">
-                        <p>Каталог</p>
-                    </div>
-                    <div class="places">
-                        <p>О нас</p>
-                    </div>
-                    <div class="places">
-                        <p>Магазины</p>
-                    </div>
-                    <div class="places">
-                        <p>Контакты</p>
+                    id="desktop" src="images/icons/logo.svg" alt="logo"></a>
+                    
+                    <div class="footer-places">
+                        <div class="places">
+                            <p>Каталог</p>
+                        </div>
+                        <div class="places">
+                            <p>О нас</p>
+                        </div>
+                        <div class="places">
+                            <p>Магазины</p>
+                        </div>
+                        <div class="places">
+                            <p>Контакты</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="icons">
-                <img src="images/icons/mobile/facebook-mobile.svg" alt="facebook">
-                <img src="images/icons/mobile/instagram-mobile.svg" alt="instagram">
-                <img src="images/icons/mobile/twitter-mobile.svg" alt="twitter">
+                
+                <div class="icons">
+                    <img src="images/icons/mobile/facebook-mobile.svg" alt="facebook">
+                    <img src="images/icons/mobile/instagram-mobile.svg" alt="instagram">
+                    <img src="images/icons/mobile/twitter-mobile.svg" alt="twitter">
+                </div>
             </div>
         </div>
-
-        <div class="bottom-footer">
+            
+        <div class="bottom-footer wrapper">
             <div class="first-line">
                 <p>Maroon</p>
                 <p><img src="images/icons/c.svg" alt=""></p>

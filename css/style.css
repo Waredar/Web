@@ -13,11 +13,11 @@ body {
     margin: 0;
     padding: 0;
     color: var(--primary-color);
-    font-family: 'M PLUS 1', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 145%;
-    min-width: 320px;
+    min-width: 32rem;
 }
 
 main {
@@ -47,12 +47,12 @@ main {
 }
 
 header {
-    height: 550px;
+    height: 55rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     margin: 0;
-    padding: 3.2rem 1.6rem 0 1.6rem;
+    padding-top: 30px;
     background-image: url(../images/header-background.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -62,13 +62,17 @@ header {
 }
 
 .menu {
-    height: 16px;
+    height: 1.6rem;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0;
+}
+
+nav {
+    height: 1.6rem;
 }
 
 .nav-wrapper a {
@@ -84,8 +88,10 @@ button {
     margin: 0;
 }
 
-#desktop {
-    display: none;
+@media screen and (max-width: 756px) {
+    #desktop {
+        display: none;
+    }
 }
 
 .right-menu-icons {
@@ -97,11 +103,8 @@ button {
     margin-left: 2rem;
 }
 
-.center-menu{
+.center-menu {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     top: -1.6rem;
     line-height: 0;
 }
@@ -164,7 +167,8 @@ a {
 }
 
 .header-wrapper {
-    margin-top: 35px;
+    width: 100%;
+    margin-top: 3.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -185,8 +189,8 @@ a {
 }
 
 .select-image {
-    min-width: 130px;
-    min-height: 170px;
+    min-width: 13rem;
+    min-height: 17rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -235,8 +239,15 @@ section {
 
 
 .crems-border {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     width: 100%;
     margin-top: 5rem;
+}
+
+.crems-border::-webkit-scrollbar {
+    display: none;
 }
 
 .crems {
@@ -249,19 +260,11 @@ section {
     list-style: none;
     padding: 0;
     display: flex;
-    white-space: nowrap;
-    overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.crems ul::-webkit-scrollbar {
-    display: none;
 }
 
 .crem {
-    width: 220px;
-    height: 297px;
+    width: 22rem;
+    height: 29.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,7 +275,7 @@ section {
 
 .name-crem {
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
@@ -312,7 +315,7 @@ section {
     background-size: cover;
 }
 
-#third-crem {   
+#third-crem {
     background-image: url(../images/crem-3.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -347,20 +350,16 @@ section {
     position: relative;
     top: -4.5rem;
     width: 85%;
-    max-width: 350px;
+    max-width: 35rem;
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     background-image: url(../images/anketa-images.png);
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: center ;
+    background-position-x: center;
     background-size: cover;
 }
 
-.history {
-    margin-left: -1.6rem;
-    margin-right: -1.6rem;
-}
 
 .history .wrapper-section {
     max-height: 32rem;
@@ -376,7 +375,7 @@ section {
 
 .text-history {
     font-family: 'Raleway', sans-serif;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 500;
     line-height: 125%;
 }
@@ -400,14 +399,14 @@ section {
 
 .images-wrapper img {
     width: 50%;
-    max-width: 177px;
+    max-width: 17.7rem;
 }
 
 .contacts .text-wrapper {
     align-self: stretch;
     align-items: start;
     text-align: left;
-    max-width: 256px;
+    max-width: 25.6rem;
 }
 
 .contacts-list {
@@ -447,9 +446,12 @@ footer {
     background-color: var(--footer-background-color);
 }
 
-.footer-text {
-    padding: 5rem 1.5rem;
+.bottom-border {
     border-bottom: 0.1rem solid var(--footer-border-color);
+}
+.footer-text {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .footer-places {
@@ -470,7 +472,8 @@ footer {
 .bottom-footer {
     display: flex;
     flex-direction: column;
-    padding: 2.5rem 1.5rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .first-line {
@@ -493,6 +496,10 @@ footer {
 
 @media screen and (min-width: 756px) {
 
+    #mobile {
+        display: none;
+    }
+
     body {
         font-size: 1.8rem;
     }
@@ -507,9 +514,15 @@ footer {
     }
 
     header {
-        padding: 4rem 4.5rem 7rem;
         margin-bottom: 11rem;
+    }
 
+    nav {
+        height: 2.1rem;
+    }
+
+    .right-menu-icons :last-child {
+        margin-left: 3rem;
     }
 
     .header-main {
@@ -519,14 +532,13 @@ footer {
 
     .header-main h1 {
         font-size: 5.4rem;
-
     }
 
     .header-wrapper {
         display: flex;
         justify-content: space-between;
         position: relative;
-        top: -25.3rem;
+        top: -26rem;
         z-index: 0;
     }
 
@@ -539,8 +551,6 @@ footer {
         margin-top: 1.5rem;
     }
 
-
-
     .text-select {
         font-size: 1.6rem;
     }
@@ -550,21 +560,14 @@ footer {
         margin-bottom: 3rem;
     }
 
-    #mobile {
-        display: none;
-    }
-
-    #desktop {
-        display: inherit;
-    }
-
     .bestseller .text-wrapper {
-        max-width: 20rem;
+        max-width: 214px;
     }
 
-    .button{
+    .button {
         margin-top: 4rem;
     }
+
     .button a {
         font-size: 1.6rem;
     }
@@ -601,8 +604,8 @@ footer {
     }
 
     .crem {
-        width: 230px;
-        height: 312px;
+        width: 23rem;
+        height: 31.2rem;
     }
 
     .crems-border {
@@ -644,6 +647,7 @@ footer {
         flex-direction: row;
         justify-content: start;
         align-items: center;
+        min-width: 670px;
         max-width: 670px;
     }
 
@@ -659,18 +663,13 @@ footer {
         min-height: 400px;
         max-height: 450px;
         width: 100%;
-        margin-left: -7rem;
+        margin-left: -25rem;
         margin-right: -4.5rem;
         white-space: nowrap;
     }
 
     .wrapper-section {
         padding: 6rem;
-    }
-
-    .history {
-        margin-left: -4.5rem;
-        margin-right: -4.5rem;
     }
 
     .history .wrapper-section {
@@ -694,7 +693,6 @@ footer {
     }
 
     .stack-images {
-        margin-right: 4.8rem;
         margin-top: 0;
     }
 
@@ -706,8 +704,8 @@ footer {
     .contacts {
         flex-direction: row;
         align-items: center;
-        justify-content:  start;
-        
+        justify-content: start;
+
     }
 
     .contacts .wrapper-section {
@@ -728,16 +726,12 @@ footer {
         white-space: nowrap;
     }
 
-
-
-
-
-
     .footer-text {
         display: flex;
         align-items: center;
-        justify-content:  space-between;
-        padding: 6rem 4.5rem;
+        justify-content: space-between;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .footer-contacts {
@@ -753,26 +747,94 @@ footer {
     }
 
     .places {
-        margin-right:  2.5rem;
-        
+        margin-right: 2.5rem;
+
     }
 
     .places p {
         font-size: 1.6rem;
     }
 
-
     .bottom-footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 2rem 4.5rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .first-line {
         margin: 0;
     }
+}
+
+@media screen and (min-width: 900px) {
+    .header-wrapper {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1360px) {
 
 
+
+    header {
+        height: 65rem;
+    }
+
+    .menu {
+        justify-content: end;
+    }
+
+    .left-menu {
+        display: none;
+    }
+
+    .center-menu {
+        text-align: left;
+    }
+
+    .right-menu {
+        display: flex;
+    }
+
+    .right-menu-icons :first-child {
+        margin-left: 5rem;
+    }
+
+    .header-places {
+        display: flex;
+        list-style: none;
+        width: 25.5rem;
+        justify-content: space-between;
+        font-size: 1.6rem;
+    }
+
+    .header-main {
+        margin-top: 135px;
+    }
+
+    .header-wrapper {
+        top: -306px;
+    }
+
+    .select-image {
+        width: 330px;
+        height: 422px;
+    }
+
+    .history .wrapper-section {
+        height: 433px;
+        justify-content: center;
+        padding: 120px 300px;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .subscribe .text-wrapper {
+        max-width: 381px;
+    }
 
 }
