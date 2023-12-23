@@ -22,9 +22,9 @@
             <nav>
                 <div class="menu">
                     <div class="left-menu">
-                        <button id="mobile" type="button"> <img src="images/icons/mobile/burger-menu-mobile.svg"
-                                alt="burger-menu"></button>
-                        <button id="desktop" type="button"> <img src="images/icons/burger-menu.svg"
+                        <button id="left-menu-mobile" type="button"> <img
+                                src="images/icons/mobile/burger-menu-mobile.svg" alt="burger-menu"></button>
+                        <button id="left-menu-desktop" type="button"> <img src="images/icons/burger-menu.svg"
                                 alt="burger-menu"></button>
                     </div>
                     <div class="right-menu">
@@ -34,12 +34,12 @@
                             <li>Контакты</li>
                         </ul>
 
-                        <div class="right-menu-icons" id="mobile">
+                        <div class="right-menu-icons" id="right-menu-mobile">
                             <img src="images/icons/mobile/persona-mobile.svg" alt="personal">
                             <img src="images/icons/mobile/shop-mobile.svg" alt="shop">
                         </div>
 
-                        <div class="right-menu-icons" id="desktop">
+                        <div class="right-menu-icons" id="right-menu-desktop">
                             <img src="images/icons/persona.svg" alt="personal">
                             <img src="images/icons/shop.svg" alt="shop">
                         </div>
@@ -47,9 +47,10 @@
                     </div>
                 </div>
                 <div class="center-menu">
-                    <a id="mobile" href="index.html"><img src="images/icons/mobile/logo-mobile.svg" alt="logo"></a>
+                    <a id="center-menu-mobile" href="index.html"><img src="images/icons/mobile/logo-mobile.svg"
+                            alt="logo"></a>
                 </div>
-                <div class="center-menu" id="desktop">
+                <div class="center-menu" id="center-menu-desktop">
                     <a href="index.html"><img src="images/icons/logo.svg" alt="logo"></a>
                 </div>
             </nav>
@@ -68,39 +69,39 @@
                 <fieldset>
                     <legend>Личная информация</legend>
                     
-                    <label for="name"><b>ФИО</b></label>
-                    <p class="main-text"><input type="text" placeholder="Иванон Иван Иванович" name="email" required></p>
+                    <label for="name"><b>ФИО</b>
+                    <input type="text" placeholder="Иванов Иван Иванович" name="email" required></label>
                     
-                    <label for="birthday"><b>Дата рождения</b></label>
-                    <p class="main-text"><input type="date" name="birthday"></p>
+                    <label for="birthday"><b>Дата рождения</b>
+                    <input type="date" name="birthday"></label>
                     
-                    <label for="gender"><b>Пол</b></label>
-                    <p class="main-text"><input type="radio" name="gender" value="men"> Мужской </p>
-                    <p class="main-text"><input type="radio" name="gender" value="women"> Женский </p>
+                    <label for="gender"><b>Пол</b>
+                    <input type="radio" name="gender" value="men"> Мужской 
+                    <input type="radio" name="gender" value="women"> Женский</label>
                     
-                    <label for="psw"><b>Пароль</b></label>
-                    <p class="main-text"><input type="password" placeholder="Введите пароль" name="psw" required></p>
+                    <label for="psw"><b>Пароль</b>
+                    <input type="password" placeholder="Введите пароль" name="psw" required></label>
                     
-                    <label for="psw-repeat"><b>Подтверждение пароля</b></label>
-                    <p class="main-text"><input type="password" placeholder="Введите пароль повторно" name="psw-repeat" required></p>
+                    <label for="psw-repeat"><b>Подтверждение пароля</b>
+                    <input type="password" placeholder="Введите пароль повторно" name="psw-repeat" required></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Контактные данные</legend>
 
-                    <label for="email"><b>Email</b></label>
-                    <p class="main-text"><input type="email" placeholder="Exemple@gmail.com" name="email" required></p>
+                    <label for="email"><b>Email</b>
+                    <input type="email" placeholder="Exemple@gmail.com" name="email" required></label>
                     
-                    <label for="number"><b>Номер телефона</b></label>
-                    <p class="main-text"><input type="number" placeholder="+7 876 543 21 00" name="number" required> </p>
+                    <label for="number"><b>Номер телефона</b>
+                    <input type="number" placeholder="+7 876 543 21 00" name="number" required></label>
 
-                    <label for="time"><b>Удобное время для связи</b></label>
+                    <label for="time"><b>Удобное время для связи</b>
                     <select name="time">
                         <option value="morning"> Утро</option>
                         <option value="morning"> День</option>
                         <option value="morning"> Вечер</option>
                         <option value="morning"> Ночь</option>
-                    </select>
+                    </select></label>
                 </fieldset>
 
                 <div class="two-button">
@@ -119,39 +120,27 @@
             <div class="footer-text wrapper">
                 <div class="footer-contacts">
 
-                    <a href="index.html"> <img id="mobile" src="images/icons/mobile/logo-mobile.svg" alt="logo"> <img
-                            id="desktop" src="images/icons/logo.svg" alt="logo"></a>
+                    <a href="index.html"> <img id="logo-mobile" src="images/icons/mobile/logo-mobile.svg" alt="logo"> <img
+                            id="logo-desktop" src="images/icons/logo.svg" alt="logo"></a>
 
                     <div class="footer-places">
                         <div class="places">
-                            <a href="">
-                                <p>Каталог</p>
-                            </a>
+                            <a href=""><p>Каталог</p></a>
                         </div>
                         <div class="places">
-                            <a href="">
-                                <p>О нас</p>
-                            </a>
+                            <a href=""><p>О нас</p></a>
                         </div>
                         <div class="places">
-                            <a href="">
-                                <p>Магазины</p>
-                            </a>
+                            <a href=""><p>Магазины</p></a>
                         </div>
                         <div class="places">
-                            <a href="">
-                                <p>Контакты</p>
-                            </a>
+                            <a href=""><p>Контакты</p></a>
                         </div>
                         <div class="places">
-                            <a href="grid.html">
-                                <p>Grid</p>
-                            </a>
+                            <a href="grid.html"><p>Grid</p></a>
                         </div>
                         <div class="places">
-                            <a href="form.html">
-                                <p>Forms</p>
-                            </a>
+                            <a href="form.html"><p>Forms</p></a>
                         </div>
                     </div>
                 </div>
