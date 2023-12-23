@@ -59,37 +59,56 @@
     <main>
 
 
-        <form action="action_page.php">
+        <form action="//httpbin.org/post" method="post" class="wrapper">
             <div class="container-forms">
-              <p class="heading-text">Регистрация</p>
-              <p class="main-text">Пожалуйста, заполните эту форму, чтобы создать учетную запись</p>
-              <hr>
-          
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Введите почту" name="email" required>
+                <div class="text-wrapper">
+                    <p class="heading-text">Регистрация</p>
+                    <p class="main-text">Пожалуйста, заполните эту форму, чтобы создать учетную запись</p>
+                </div>
+                <fieldset>
+                    <legend>Личная информация</legend>
+                    
+                    <label for="name"><b>ФИО</b></label>
+                    <p class="main-text"><input type="text" placeholder="Иванон Иван Иванович" name="email" required></p>
+                    
+                    <label for="birthday"><b>Дата рождения</b></label>
+                    <p class="main-text"><input type="date" name="birthday"></p>
+                    
+                    <label for="gender"><b>Пол</b></label>
+                    <p class="main-text"><input type="radio" name="gender" value="men"> Мужской </p>
+                    <p class="main-text"><input type="radio" name="gender" value="women"> Женский </p>
+                    
+                    <label for="psw"><b>Пароль</b></label>
+                    <p class="main-text"><input type="password" placeholder="Введите пароль" name="psw" required></p>
+                    
+                    <label for="psw-repeat"><b>Подтверждение пароля</b></label>
+                    <p class="main-text"><input type="password" placeholder="Введите пароль повторно" name="psw-repeat" required></p>
+                </fieldset>
 
-              <label for="name"><b>ФИО</b></label>
-              <input type="text" placeholder="Введите имя" name="email" required>
-          
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-          
-              <label for="psw-repeat"><b>Repeat Password</b></label>
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-              <hr>
-          
-              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-              <button type="submit" class="registerbtn">Register</button>
-            </div>
-          
-            <div class="container signin">
-              <p>Already have an account? <a href="#">Sign in</a>.</p>
+                <fieldset>
+                    <legend>Контактные данные</legend>
+
+                    <label for="email"><b>Email</b></label>
+                    <p class="main-text"><input type="email" placeholder="Exemple@gmail.com" name="email" required></p>
+                    
+                    <label for="number"><b>Номер телефона</b></label>
+                    <p class="main-text"><input type="number" placeholder="+7 876 543 21 00" name="number" required> </p>
+
+                    <label for="time"><b>Удобное время для связи</b></label>
+                    <select name="time">
+                        <option value="morning"> Утро</option>
+                        <option value="morning"> День</option>
+                        <option value="morning"> Вечер</option>
+                        <option value="morning"> Ночь</option>
+                    </select>
+                </fieldset>
+
+                <div class="two-button">
+                    <button type="submit" class="button">Отправить форму</button>
+                    <button type="reset" class="button">Сброс формы</button>
+                </div>
             </div>
           </form>
-
-
-
-
     </main>
 
 
