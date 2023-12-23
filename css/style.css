@@ -583,12 +583,30 @@ footer {
 
 .container .square {    
     aspect-ratio: 1/1;
-    background-color: aqua;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    align-content: center;
-    justify-content: center;
+    grid-template-rows: repeat(3, 1fr); 
+    place-items: center center;
+    justify-items: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.square-1 {
+    background-image: url(../images/stack-images-1.png);
+}
+
+.square-2 {
+    background-image: url(../images/stack-images-2.png);
+}
+
+.square-3 {
+    background-image: url(../images/stack-images-3.png);
+}
+
+.square-4 {
+    background-image: url(../images/stack-images-4.png);
 }
 
 .container .square  .button {
@@ -596,7 +614,6 @@ footer {
     grid-column: 2/3;
     grid-row: 2/3;
 }  
-
 
 @media screen and (min-width: 756px) {
 
@@ -948,8 +965,13 @@ footer {
         margin-top: 135px;
     }
 
+
     .header-wrapper {
         top: -306px;
+        width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
     }
 
     .select-image {
